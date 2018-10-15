@@ -1,8 +1,15 @@
+$primary: #003366;
+$secondary: #1e90ff;
+
+body {
+  margin: 0;
+}
+
 ul#nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: darkblue;
+  background: $primary;
   list-style-type: none;
 
   li {
@@ -17,7 +24,21 @@ ul#nav {
     }
 
     a:hover {
-      background: dodgerblue;
+      background: $secondary;
     }
+  }
+}
+
+#footer {
+  position: fixed;
+  background: $primary;
+  color: white;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  a:link {
+    color: yellow;
   }
 }
