@@ -1,8 +1,12 @@
 $primary: #003366;
 $secondary: #1e90ff;
+$margins: 25px;
 
 body {
   margin: 0;
+  background: darkgray;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul#nav {
@@ -29,6 +33,29 @@ ul#nav {
   }
 }
 
+#header {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.col_25 {
+  flex: 25%;
+  margin: $margins;
+}
+
+.col_50 {
+  flex: 50%;
+  margin: $margins;
+}
+
+.col_75 {
+  flex: 75%;
+  margin: $margins;
+}
+
 #footer {
   position: fixed;
   background: $primary;
@@ -41,4 +68,30 @@ ul#nav {
   a:link {
     color: yellow;
   }
+}
+
+img {
+  width: 100%;
+}
+
+table#news {
+  width: 100%;
+
+  tr {
+    background: $primary;
+  }
+
+  tr:nth-child(even){
+    background: $secondary
+  }
+
+  th, td {
+    text-align: center;
+    padding: 10px;
+
+    a:link {
+      color: yellow;
+    }
+  }
+
 }
